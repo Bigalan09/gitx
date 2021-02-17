@@ -1,0 +1,19 @@
+[package]
+name = "gitx"
+version = "0.1.0"
+authors = ["Alan Gardner <alan.gardner@wealthify.com>"]
+edition = "2018"
+keywords = ["git", "cli"]
+categories = ["command-line-utilities"]
+include = [
+    "Cargo.toml",
+    "**/*.rs",
+]
+
+[dependencies]
+human-panic = "1"
+regex = "1"
+
+[[bin]]
+name = "gitx"
+path = "src/bin/gitx.rs"
